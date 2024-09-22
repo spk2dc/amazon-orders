@@ -117,19 +117,19 @@
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="689.6,2865.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="689.6,3393.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="home" sap:VirtualizedContainerService.HintSize="627.2,2776.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="{x:Null}" InteractionMode="DebuggerApi" IsIncognito="{x:Null}" OpenMode="{x:Null}" OutUiElement="{x:Null}" ScopeGuid="a0708280-288b-422f-b22a-ac187d1d6b4e" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="home" sap:VirtualizedContainerService.HintSize="627.2,3304.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="{x:Null}" InteractionMode="DebuggerApi" IsIncognito="{x:Null}" OpenMode="{x:Null}" OutUiElement="{x:Null}" ScopeGuid="a0708280-288b-422f-b22a-ac187d1d6b4e" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="593.6,2536.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="593.6,3064.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable" />
             </Sequence.Variables>
@@ -179,7 +179,8 @@
                 <uix:TargetAnchorable BrowserURL="https://www.amazon.com/your-orders/orders?timeFilter=year-2024&amp;ref_=ppx_yo2ov_dt_b_filter_all_y2024" ContentHash="hYDc35f9S0KajlkqT0I7-A" DesignTimeRectangle="384, 44, 1150, 4722" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='a-page' tag='DIV' /&gt;" Guid="763b5bf8-f499-451b-aad1-7cd283085732" InformativeScreenshot="72dd4a0587d91526186c131ffa58bed7.png" Reference="gT-PwrBNrEG280KwIqqtxg/iIPTqR1JEUG-vVfWclUzpw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Your Orders' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
               </uix:NExtractData.Target>
             </uix:NExtractData>
-            <ui:WriteRange AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="531.2,148" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="[DateAndTime.Now.ToString(&quot;yyyy&quot;)]" StartingCell="A1" WorkbookPath="[Directory.GetCurrentDirectory+&quot;Amazon Orders &quot;+DateAndTime.Now.ToString(&quot;yyyy&quot;)]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="531.2,176" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;Writing current year to: &quot;+Directory.GetCurrentDirectory+&quot;\&quot;+DateAndTime.Now.ToString(&quot;yyyy&quot;)+&quot;.xlsx&quot;]" />
+            <ui:WriteRange AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="531.2,148" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="[DateAndTime.Now.ToString(&quot;yyyy&quot;)]" StartingCell="A1" WorkbookPath="[Directory.GetCurrentDirectory+&quot;\&quot;+DateAndTime.Now.ToString(&quot;yyyy&quot;)+&quot;.xlsx&quot;]" />
             <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="531.2,382.4" sap2010:WorkflowViewState.IdRef="CommentOut_7">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,272" sap2010:WorkflowViewState.IdRef="Sequence_8">
@@ -212,6 +213,7 @@
                 <uix:TargetAnchorable BrowserURL="https://www.amazon.com/your-orders/orders?timeFilter=year-2024&amp;ref_=ppx_yo2ov_dt_b_filter_all_y2024" ContentHash="hYDc35f9S0KajlkqT0I7-A" DesignTimeRectangle="384, 44, 1150, 4722" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='a-page' tag='DIV' /&gt;" Guid="763b5bf8-f499-451b-aad1-7cd283085732" InformativeScreenshot="72dd4a0587d91526186c131ffa58bed7.png" Reference="gT-PwrBNrEG280KwIqqtxg/iIPTqR1JEUG-vVfWclUzpw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Your Orders' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
               </uix:NExtractData.Target>
             </uix:NExtractData>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="531.2,176" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot;Writing last year to sheet: &quot;+DateAndTime.Now.AddYears(-1).ToString(&quot;yyyy&quot;)]" />
             <ui:WriteRange AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="531.2,148" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="[DateAndTime.Now.AddYears(-1).ToString(&quot;yyyy&quot;)]" StartingCell="A1" WorkbookPath="[Directory.GetCurrentDirectory+&quot;Amazon Orders &quot;+DateAndTime.Now.ToString(&quot;yyyy&quot;)]" />
             <ui:Comment sap:VirtualizedContainerService.HintSize="531.2,88" sap2010:WorkflowViewState.IdRef="Comment_3" Text="2 years ago" />
             <uix:NSelectItem DisplayName="Select Item 'timeframe'" sap:VirtualizedContainerService.HintSize="531.2,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_4" Item="[DateAndTime.Now.AddYears(-2).ToString(&quot;yyyy&quot;)]" ScopeIdentifier="a0708280-288b-422f-b22a-ac187d1d6b4e" Version="V4">
@@ -233,6 +235,7 @@
                 <uix:TargetAnchorable BrowserURL="https://www.amazon.com/your-orders/orders?timeFilter=year-2024&amp;ref_=ppx_yo2ov_dt_b_filter_all_y2024" ContentHash="hYDc35f9S0KajlkqT0I7-A" DesignTimeRectangle="384, 44, 1150, 4722" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='a-page' tag='DIV' /&gt;" Guid="763b5bf8-f499-451b-aad1-7cd283085732" InformativeScreenshot="72dd4a0587d91526186c131ffa58bed7.png" Reference="gT-PwrBNrEG280KwIqqtxg/iIPTqR1JEUG-vVfWclUzpw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Your Orders' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
               </uix:NExtractData.Target>
             </uix:NExtractData>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="531.2,176" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;Writing 2 years ago to sheet: &quot;+DateAndTime.Now.AddYears(-2).ToString(&quot;yyyy&quot;)]" />
             <ui:WriteRange AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="531.2,140.8" sap2010:WorkflowViewState.IdRef="WriteRange_4" SheetName="[DateAndTime.Now.AddYears(-2).ToString(&quot;yyyy&quot;)]" StartingCell="A1" WorkbookPath="[Directory.GetCurrentDirectory+&quot;Amazon Orders &quot;+DateAndTime.Now.ToString(&quot;yyyy&quot;)]" />
           </Sequence>
         </ActivityAction>
