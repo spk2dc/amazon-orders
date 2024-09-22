@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tFlLWNg2zE-56v3Fs3FXPg" Reference="gT-PwrBNrEG280KwIqqtxg/Mt9_Pb0ee0idqDJWjCYlcg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.amazon.com/gp/css/order-history?ref_=nav_orders_first" DesignTimeRectangle="549, 464, 153, 36" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-role='button' tag='SPAN' parentclass='a-button-inner' check:text='past 3 months' /&gt;" Guid="36924282-6356-4647-8c20-baec677d3d84" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Your Orders' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="384, 339, 562, 45" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' aaname='Your Orders' check:text='Your Orders' /&gt;" Guid="2f41cc45-e427-4970-b1e5-ea25c20d4c38" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ab97572e79ae1395cdf68432de4093cf.png" xmlns="">0MsLA3v9p_0emZtDD3AlODA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

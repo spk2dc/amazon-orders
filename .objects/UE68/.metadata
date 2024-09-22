@@ -1,0 +1,11 @@
+﻿{
+  "Name": "Amazon Site",
+  "Type": "App",
+  "Id": "UE68zqIC7UaSg4ycuTqzrw",
+  "Reference": "gT-PwrBNrEG280KwIqqtxg/UE68zqIC7UaSg4ycuTqzrw",
+  "Created": "2024-09-22T19:35:56.8517839Z",
+  "Updated": "2024-09-22T19:35:56.8517839Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

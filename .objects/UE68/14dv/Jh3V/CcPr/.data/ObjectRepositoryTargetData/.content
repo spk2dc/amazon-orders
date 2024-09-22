@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="B8ALtQ-Ibkeg8zFzbbmPMQ" Reference="gT-PwrBNrEG280KwIqqtxg/CcPrSRSlVkeu33Ku3O1cdg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.amazon.com/ref=nav_logo" DesignTimeRectangle="1691, 166, 96, 63" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='A' aaname='   Returns   &amp;amp; Orders ' check:text='Returns&amp;#xA;  &amp;amp; Orders' /&gt;" Guid="4a421066-69b4-43e5-a508-d7c9de657f8c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com. Spend less. Smile more.' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="171e3838-5764-451d-83bd-99220aa1ab52" DesignTimeRectangle="1535, 179, 142, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='SPAN' aaname='Hello, Sathiya' check:text='Hello, Sathiya' /&gt;" Guid="f3de5a78-040b-45e7-98c5-e0116bfb300a" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4d8234da3ef821085693a57138d547ed.png" xmlns="">0-gW6BnXM906Kj6JHDewEHQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
